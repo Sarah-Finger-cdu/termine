@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Persönlicher Austausch | Sarah Finger</title>
+  <style>
+    :root {
+      --navy: #13283a;
+      --blue: #34566f;
+      --light: #f5f4f1;
+      --white: #ffffff;
+      --text: #24313a;
+      --muted: #66727a;
+      --line: #dedfdc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: var(--light);
+      line-height: 1.5;
+    }
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 42px 20px;
+    }
+    .card {
+      width: min(1080px, 100%);
+      background: var(--white);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 16px 45px rgba(20, 40, 55, 0.10);
+      display: grid;
+      grid-template-columns: 42% 58%;
+    }
+    .portrait {
+      min-height: 650px;
+      background: #dfe2e2;
+    }
+    .portrait img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: 50% 34%;
+    }
+    .content {
+      padding: 66px 62px 58px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .name {
+      margin: 0 0 28px;
+      color: var(--blue);
+      font-size: 16px;
+      font-weight: 650;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(38px, 4.4vw, 58px);
+      line-height: 1.04;
+      font-weight: 500;
+      letter-spacing: -0.025em;
+    }
+    .intro {
+      margin: 22px 0 34px;
+      max-width: 540px;
+      font-size: 18px;
+      color: var(--muted);
+    }
+    .dates {
+      border-top: 1px solid var(--line);
+    }
+    .date {
+      display: grid;
+      grid-template-columns: 112px 1fr;
+      gap: 20px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .when {
+      color: var(--navy);
+      font-weight: 700;
+    }
+    .when span {
+      display: block;
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 500;
+      margin-top: 2px;
+    }
+    .where {
+      font-size: 17px;
+      font-weight: 650;
+      color: var(--navy);
+    }
+    .where span {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 400;
+    }
+    .note {
+      margin: 30px 0 0;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      font-style: italic;
+    }
+    @media (max-width: 760px) {
+      .page { padding: 0; align-items: flex-start; }
+      .card {
+        border-radius: 0;
+        display: block;
+        min-height: 100vh;
+        box-shadow: none;
+      }
+      .portrait { height: 48vh; min-height: 390px; }
+      .portrait img { object-position: 50% 28%; }
+      .content { padding: 38px 26px 44px; }
+      .name { margin-bottom: 18px; }
+      h1 { font-size: 40px; }
+      .intro { font-size: 17px; margin: 18px 0 28px; }
+      .date { grid-template-columns: 94px 1fr; gap: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="portrait">
+        <img src="sarah-finger.jpg" alt="Sarah Finger">
+      </div>
+      <div class="content">
+        <p class="name">Sarah Finger</p>
+        <h1>Lassen Sie uns<br>ins Gespräch kommen.</h1>
+        <p class="intro">Ich freue mich auf den persönlichen Austausch mit Ihnen. An diesen drei Samstagen haben wir Gelegenheit, uns in Ruhe kennenzulernen und miteinander ins Gespräch zu kommen.</p>
+
+        <div class="dates">
+          <div class="date">
+            <div class="when">12.09.<span>11:00 Uhr</span></div>
+            <div class="where">Park der Generationen<span>Lütgendortmund</span></div>
+          </div>
+          <div class="date">
+            <div class="when">19.09.<span>11:00 Uhr</span></div>
+            <div class="where">Phoenix-See<span>Hörde</span></div>
+          </div>
+          <div class="date">
+            <div class="when">26.09.<span>11:00 Uhr</span></div>
+            <div class="where">Rombergpark<span>Hombruch</span></div>
+          </div>
+        </div>
+
+        <p class="note">Ich freue mich auf unser Gespräch.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
