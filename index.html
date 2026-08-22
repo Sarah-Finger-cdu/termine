@@ -112,6 +112,25 @@
       font-size: 15px;
       font-weight: 400;
     }
+    .place-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .route {
+      flex: 0 0 auto;
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 650;
+      text-decoration: none;
+      border-bottom: 1px solid #aab8c1;
+      padding-bottom: 1px;
+    }
+    .route:hover {
+      color: var(--navy);
+      border-bottom-color: var(--navy);
+    }
     .note {
       margin: 30px 0 0;
       color: var(--navy);
@@ -134,6 +153,8 @@
       h1 { font-size: 40px; }
       .intro { font-size: 17px; margin: 18px 0 28px; }
       .date { grid-template-columns: 94px 1fr; gap: 14px; }
+      .place-line { align-items: flex-start; }
+      .route { font-size: 13px; }
     }
   </style>
 </head>
@@ -146,20 +167,20 @@
       <div class="content">
         <p class="name">Sarah Finger</p>
         <h1>Lassen Sie uns<br>ins Gespräch kommen.</h1>
-        <p class="intro">Ich freue mich auf den persönlichen Austausch mit Ihnen. An diesen drei Samstagen haben wir Gelegenheit, uns in Ruhe kennenzulernen und miteinander ins Gespräch zu kommen.</p>
+        <p class="intro">Ich freue mich auf den persönlichen Austausch mit Ihnen. An diesen drei Samstagen haben wir Gelegenheit, uns in Ruhe über meine Kandidatur und das, was Ihnen für unseren Wahlkreis wichtig ist, auszutauschen.</p>
 
         <div class="dates">
           <div class="date">
             <div class="when">12.09.<span>11:00 Uhr</span></div>
-            <div class="where">Park der Generationen<span>Lütgendortmund</span></div>
+            <div class="where"><div class="place-line"><span style="display:inline; margin:0; color:inherit; font-size:inherit; font-weight:inherit;">Park der Generationen</span><a class="route" href="https://www.google.com/maps/search/?api=1&query=Park%20der%20Generationen%2C%20Zehlendorfer%20Weg%2C%2044388%20Dortmund" target="_blank" rel="noopener">Route ↗</a></div><span>Lütgendortmund</span></div>
           </div>
           <div class="date">
             <div class="when">19.09.<span>11:00 Uhr</span></div>
-            <div class="where">Phoenix-See<span>Hörde</span></div>
+            <div class="where"><div class="place-line"><span style="display:inline; margin:0; color:inherit; font-size:inherit; font-weight:inherit;">Phoenix-See</span><a class="route" href="https://www.google.com/maps/search/?api=1&query=Phoenix-See%2C%20Dortmund" target="_blank" rel="noopener">Route ↗</a></div><span>Hörde</span></div>
           </div>
           <div class="date">
             <div class="when">26.09.<span>11:00 Uhr</span></div>
-            <div class="where">Rombergpark<span>Hombruch</span></div>
+            <div class="where"><div class="place-line"><span style="display:inline; margin:0; color:inherit; font-size:inherit; font-weight:inherit;">Rombergpark</span><a class="route" href="https://www.google.com/maps/search/?api=1&query=Botanischer%20Garten%20Rombergpark%2C%20Am%20Rombergpark%2C%20Dortmund" target="_blank" rel="noopener">Route ↗</a></div><span>Hombruch</span></div>
           </div>
         </div>
 
